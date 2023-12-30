@@ -135,7 +135,7 @@ def tui():
 
 async def fuck():
     channel = "marvelcloud"
-    post = "169"
+    post = "188"
     try:
         search('<span class="tgme_widget_message_views">([^<]+)', requests.get(f'https://t.me/{channel}/{post}',
         params={'embed': '1', 'mode': 'tme'}, headers={'referer': f'https://t.me/{channel}/{post}', 'user-agent': USER_AGENT}).text).group(1)
