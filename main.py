@@ -118,13 +118,13 @@ def check_views():
 def tui():
     while True:
         print(logo)
-        print(f'''{B}[ ᴅᴀᴛᴀ ]: {G}{channel.capitalize()}/{post}
-{B}[ ʟɪᴠᴇ ᴠɪᴇᴡs ]: {G}{real_views} ✅
+        print(f'''[ ᴅᴀᴛᴀ ]: {channel.capitalize()}/{post}
+[ ʟɪᴠᴇ ᴠɪᴇᴡs ]: {real_views} ✅
  
-{S}[ ᴄᴏɴɴᴇᴄᴛɪᴏɴ ᴇʀʀᴏʀs ]: {E}{proxy_errors} 🚫
-{S}[ ᴛᴏᴋᴇɴ ᴇʀʀᴏʀs ]: {E}{token_errors} ❌
+[ ᴄᴏɴɴᴇᴄᴛɪᴏɴ ᴇʀʀᴏʀs ]: {proxy_errors} 🚫
+[ ᴛᴏᴋᴇɴ ᴇʀʀᴏʀs ]: {token_errors} ❌
  
-{G}[ ᴛʜʀᴇᴀᴅs ]: {B}{active_count()} ⇝⇝⇝⇝ ''')
+[ ᴛʜʀᴇᴀᴅs ]: {active_count()} ⇝⇝⇝⇝ ''')
         sleep(2);system('cls' if name == 'nt' else 'clear')
 
 
