@@ -147,7 +147,7 @@ async def fuck():
     try:
         search('<span class="tgme_widget_message_views">([^<]+)', requests.get(f'https://t.me/{channel}/{post}',
         params={'embed': '1', 'mode': 'tme'}, headers={'referer': f'https://t.me/{channel}/{post}', 'user-agent': USER_AGENT}).text).group(1)
-    except: print(f'{E}[×] Error | Channel Or Post Not Found!');sleep(3);exit()
+    except: print(f'[×] Error | Channel Or Post Not Found!');sleep(3);exit()
     else:
         print(f'[√]sᴛᴀʀᴛᴇᴅ | ᴡᴀɪᴛ ғᴇᴡ sᴇᴄᴏɴᴅs ᴛᴏ ʀᴜɴ ᴛʜʀᴇᴀᴅs')
         Thread(target=start_view).start()
