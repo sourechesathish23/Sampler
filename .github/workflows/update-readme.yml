@@ -17,7 +17,7 @@ jobs:
           current_date=$(date +"%Y-%m-%d %H:%M:%S")
 
           # Append the date and time to the README file
-          echo "Last updated: $current_date" >> README.md
+          echo "Last updated Update Readme: $current_date" >> README.md
 
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v7
