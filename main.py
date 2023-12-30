@@ -9,16 +9,6 @@ import time
 import random
 import asyncio
 from aiohttp import web
-routes = web.RouteTableDef()
-
-@routes.get("/", allow_head=True)
-async def root_route_handler(request):
-    return web.json_response({"status": "running"})
-
-async def web_server():
-    web_app = web.Application(client_max_size=30000000)
-    web_app.add_routes(routes)
-    return web_app
 
 
 API_ID = int(15037283)
@@ -222,10 +212,6 @@ async def fuck():
         Thread(target=start_view).start()
         Thread(target=check_views).start()
         print("Application Started")
-    wapp = web.AppRunner(await web_server())
-    await wapp.setup()
-    bind_address = "0.0.0.0"
-    await web.TCPSite(wapp, "0.0.0.0", 5000).start()
     await idle()
 
 
