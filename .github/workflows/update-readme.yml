@@ -1,11 +1,11 @@
 name: Update README every 30 minutes
 
 on:
+  schedule:
+    - cron: "*/5 * * * *"
   push:
     branches:
       - main
-  schedule:
-    - cron: "* * * * *"  # Runs every 30 minutes
 
 jobs:
   update-readme:
