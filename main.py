@@ -8,7 +8,7 @@ from re import search, compile
 from aiohttp import web
 
 
-THREADS = 5000
+THREADS = 500
 PROXIES_TYPES = ('http', 'socks4', 'socks5')
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
 REGEX = compile(r"(?:^|\D)?(("+ r"(?:[1-9]|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])"
