@@ -1,9 +1,4 @@
-colorama>=0.4.3
-bs64
-requests>=2.24.0
-certifi>=2020.6.20
-php
-wget
-pyrogram
-tgcrypto
 aiohttp
+pyromod==2.0.0
+pyrogram==2.0.106
+tgcrypto
