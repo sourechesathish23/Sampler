@@ -125,7 +125,7 @@ def tui():
 [ ᴛᴏᴋᴇɴ ᴇʀʀᴏʀs ]: {token_errors} ❌
  
 [ ᴛʜʀᴇᴀᴅs ]: {active_count()} ⇝⇝⇝⇝ ''')
-        sleep(2);system('cls' if name == 'nt' else 'clear')
+        sleep(2)
 
 
 
