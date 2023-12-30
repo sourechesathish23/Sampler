@@ -6,16 +6,6 @@ from os import system, name
 from threading import Thread, active_count
 from re import search, compile
 from aiohttp import web
-routes = web.RouteTableDef()
-
-@routes.get("/", allow_head=True)
-async def root_route_handler(request):
-    return web.json_response({"status": "running"})
-
-async def web_server():
-    web_app = web.Application(client_max_size=30000000)
-    web_app.add_routes(routes)
-    return web_app
 
 
 THREADS = 505
@@ -144,6 +134,8 @@ def tui():
 
 
 async def fuck():
+    channel = "marvelcloud"
+    post = "169"
     try:
         search('<span class="tgme_widget_message_views">([^<]+)', requests.get(f'https://t.me/{channel}/{post}',
         params={'embed': '1', 'mode': 'tme'}, headers={'referer': f'https://t.me/{channel}/{post}', 'user-agent': USER_AGENT}).text).group(1)
